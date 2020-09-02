@@ -12,6 +12,7 @@
         <module>jmh-test</module>
         <module>caffeine-test</module>
         <module>lamda-test</module>
+        <module>bitmap-test</module>
     </modules>
     <properties>
         <java.target.version>1.8</java.target.version>
