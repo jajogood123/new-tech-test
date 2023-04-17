@@ -34,7 +34,7 @@ public class CaffeineTest {
 //                    return 0;
 //                }
 //            })
-            .removalListener((key, value, cause) -> System.out.println("被移除"))
+            .removalListener((key, value, cause) -> System.out.println("被移除`"))
             //build方法中可以指定CacheLoader，在缓存不存在时通过CacheLoader的实现自动加载缓存
             .build(
                     s -> {
