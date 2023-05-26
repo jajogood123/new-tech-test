@@ -13,6 +13,7 @@
         <module>caffeine-test</module>
         <module>lamda-test</module>
         <module>bitmap-test</module>
+        <module>langchain</module>
     </modules>
     <properties>
         <java.target.version>1.8</java.target.version>
@@ -61,7 +62,13 @@
                 <artifactId>guava</artifactId>
                 <version>29.0-jre</version>
             </dependency>
-<!--            -->
+
+            <!--lang chain-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>ali-langengine-core</artifactId>
+                <version>0.1.0-SNAPSHOT</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
