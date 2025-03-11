@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
 public class NullableTest {
     private static final List<Integer> DATA = Lists.newArrayList(1,2,3,4,5);
 
+//    ji
     private static final List<Integer> EMPTY = null;
 
     /**
