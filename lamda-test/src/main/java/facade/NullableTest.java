@@ -18,6 +18,10 @@ public class NullableTest {
 //    ji
     private static final List<Integer> EMPTY = null;
 
+    public void test() {
+
+    }
+
     /**
      * 注意这里测试的方法都是optional的方法
      * @param args
