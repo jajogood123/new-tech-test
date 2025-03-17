@@ -1,7 +1,11 @@
 package facade;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import lombok.*;
+
+import java.util.concurrent.ConcurrentHashMap;
+
 
 /**
  * @author shaozhenya
@@ -18,7 +22,7 @@ public class Test {
      * 年龄
      */
     private Integer age;
-
+    
     /**
      * 名字
      */
@@ -26,9 +30,18 @@ public class Test {
 
     public static void main(String[] args) {
         Test test = new Test();
-        test.setAge(1);
-        test.setName("你好");
 
-        System.out.println(JSONObject.toJSON(test));
+        Test test1 = new Test();
+
+
+        test.setAge(12);
+
+        test1.setName("123");
+        test1.setAge(12);
+        test.setName("123");
+        test.setAge(12);
+        System.out.println(JSON.toJSONString(test));
+
     }
+
 }

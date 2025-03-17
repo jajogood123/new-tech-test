@@ -1,11 +1,13 @@
 package facade;
 
+import com.alibaba.fastjson.JSONObject;
 import com.github.benmanes.caffeine.cache.Caffeine;
 import com.github.benmanes.caffeine.cache.LoadingCache;
 
 import java.util.concurrent.TimeUnit;
 
 /**
+ * test test
  * @author shaozhenya
  * @date 2020/8/13
  */
@@ -51,5 +53,22 @@ public class CaffeineTest {
             System.out.println(cache.get("bK"));
             Thread.sleep(200);
         }
+    }
+
+    /**
+     * 帮我实现一个冒泡排序
+     */
+    public void sort(int[] arr) {
+        JSONObject jsonObject = new JSONObject();
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+        System.out.println(JSONObject.toJSONString(arr));
     }
 }
