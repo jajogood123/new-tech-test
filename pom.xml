@@ -21,7 +21,7 @@
     <dependencyManagement>
         <dependencies>
 
-            <!--通用工具-->
+            <!--通用工具11-->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
